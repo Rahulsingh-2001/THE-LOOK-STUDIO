@@ -1,0 +1,218 @@
+#home{
+    background:url(../img/bg3.jpg) no-repeat center/cover;
+    height: 70vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .text{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        font-size: 3.5rem;
+        color: white;
+        padding: 15px;
+    }
+    .tattoo-img{
+        width: 70%;
+        border-left: 3px solid white;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        .img{
+            animation: bg 7s infinite;
+            height: 100%;
+            width: 40%;
+            filter: invert(100%);
+        }
+        
+    }
+}
+
+@keyframes bg{
+    0%{
+        background: url(../img/tattoo1.png) no-repeat center/cover;
+    }
+    25%{
+        background: url(../img/tattoo2.png) no-repeat center/cover;
+    }
+    40%{
+        background: url(../img/tattoo3.png) no-repeat center/cover;
+    }
+    60%{
+        background: url(../img/tattoo4.png) no-repeat center/cover;
+    }
+    75%{
+        background: url(../img/tattoo5.png) no-repeat center/cover;
+    }
+    100%{
+        background: url(../img/tattoo6.png) no-repeat center/cover;
+    }
+}
+
+
+
+#home-txt{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 100px;
+    height: 70vh;
+
+    .home-text1{
+        width: 50%;
+        text-align: right;
+        padding: 5px 10px;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        .home-text1-p4{
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            font-size:1.5rem;
+            padding:5px 5px;
+            margin-top: 50px;
+            text-align: center;
+            width: auto;
+            
+        }
+    }
+    
+    .home-text2{
+        width: 50%;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        .home-text2-p1{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width:1075px){
+    .home-text1{
+        font-size: 2rem;
+    }
+    .home-text2{
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width:935px){
+    #home-txt{
+        height: 40vh;
+        padding: 60px 70px;
+        
+        .home-text1{
+            font-size: 1.5rem;
+            .home-text1-p4{
+                font-size: 1rem;
+            }
+        }
+        .home-text2{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(max-width:930px){
+    #home{
+        margin-top: 50px;
+    }
+    #home-txt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        .home-text2{
+            width: 90%;
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:750px){
+    #home-txt{
+        // height: 250px;
+        .home-text1{
+            font-size: 1.2rem;
+            .home-text1-p4{
+                font-size: 1rem;
+            }
+        }
+        
+    }
+
+    #home{
+        background: url(../img/bg4.jfif) no-repeat center/cover;
+        .text{
+            font-size: 2.5rem;
+        }
+        .tattoo-img{
+            .img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+
+@media(max-width:600px){
+    #home-txt{
+        // height: 200px;
+        padding: 40px 40px;
+        .home-text1{
+            font-size: 1rem;
+            .home-text1-p4{
+                font-size: 0.8rem;
+            }
+        }
+        .home-text2{
+            .home-text2-p1{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #home{
+        height: 50vh;
+        .text{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media(max-width:475px){
+    #home-txt{
+        // height: 30vh;
+        .home-text1{
+            font-size: 0.8rem;
+            .home-text1-p4{
+                font-size: 0.5rem;
+                margin-top: 25px;
+            }
+        }
+        
+    }
+}
+
+
+@media(max-width:390px){
+    #home-txt{
+        // height: 150px;
+        .home-text1{
+            font-size: 0.6rem;
+            .home-text1-p4{
+                font-size: 0.4rem;
+            }
+        }
+       
+    }
+}

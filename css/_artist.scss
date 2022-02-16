@@ -1,0 +1,45 @@
+@import '_mixin.scss';
+#artist{
+    border:2px solid white;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    background-attachment: fixed;
+    h1{
+        font-size: 2.5rem;
+        color: white;
+    }
+    .img{
+        img{
+            height: 30vh;
+            width: 30vh;
+        }
+    }
+    .artists{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        height: fit-content;
+        
+        .card-1{
+           
+            @include card('../img/artist1.png');
+        }
+        .card-2{
+           @include card('../img/artist2.png');
+        }
+        .card-3{
+            @include card('../img/artist3.png');
+        }
+               
+    }    
+
+}
+
